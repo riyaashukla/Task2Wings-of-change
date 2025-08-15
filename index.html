@@ -14,14 +14,15 @@
         line-height: 1.6;
     }
     header {
-        background: linear-gradient(90deg, #7c5cff, #21c7b9);
+        background: linear-gradient(90deg, #ff7e5f, #feb47b);
         color: #fff;
-        padding: 20px;
+        padding: 30px;
         text-align: center;
     }
     header h1 {
         margin: 0;
-        font-size: 2rem;
+        font-size: 2.4rem;
+        font-weight: 700;
     }
     .container {
         max-width: 1100px;
@@ -30,40 +31,43 @@
     }
     .headlines {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 25px;
         margin-bottom: 40px;
     }
     .headline-card {
         background: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         overflow: hidden;
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .headline-card:hover {
-        transform: translateY(-5px);
+        transform: translateY(-6px);
+        box-shadow: 0 12px 24px rgba(0,0,0,0.2);
     }
     .headline-card img {
         width: 100%;
-        height: 200px;
+        height: 220px;
         object-fit: cover;
     }
     .headline-card h3 {
         padding: 15px;
         margin: 0;
-        font-size: 1.1rem;
-        background-color: #f1f1f1;
+        font-size: 1.15rem;
+        background-color: #fdfdfd;
+        border-top: 2px solid #eee;
     }
     .article {
         background: white;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
     .article h2 {
         margin-top: 0;
-        color: #7c5cff;
+        color: #ff7e5f;
+        font-size: 1.8rem;
     }
     .hashtags {
         margin-top: 20px;
@@ -71,10 +75,12 @@
     .hashtags span {
         display: inline-block;
         margin: 5px;
-        padding: 8px 12px;
+        padding: 8px 14px;
         border-radius: 20px;
-        background-color: #f1f1f1;
+        background-color: #ffe8e0;
+        color: #ff7e5f;
         font-size: 0.9rem;
+        font-weight: 600;
     }
 </style>
 </head>
@@ -85,23 +91,23 @@
 <div class="container">
     <section class="headlines">
         <div class="headline-card">
-            <img src="https://images.unsplash.com/photo-1551836022-4c4c79ecde51" alt="">
+            <img src="https://images.unsplash.com/photo-1581093458791-9d42a04b52f4" alt="Women Empowerment">
             <h3>Wings of Change: How Women Are Soaring Beyond Boundaries with Project Udaan</h3>
         </div>
         <div class="headline-card">
-            <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe" alt="">
+            <img src="https://images.unsplash.com/photo-1543269865-cbf427effbad" alt="Leadership">
             <h3>Udaan – Where Women Rise, Lead, and Inspire the Future</h3>
         </div>
         <div class="headline-card">
-            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4" alt="">
+            <img src="https://images.unsplash.com/photo-1603570417033-53a88d22b8d7" alt="Breaking Barriers">
             <h3>Breaking Chains, Building Dreams: Project Udaan’s Journey of Empowerment</h3>
         </div>
         <div class="headline-card">
-            <img src="https://images.unsplash.com/photo-1520975922284-5f6ed3f6f4b0" alt="">
+            <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c" alt="Dreams to Reality">
             <h3>From Dreams to Reality – Women Leading the Way with Project Udaan</h3>
         </div>
         <div class="headline-card">
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330" alt="">
+            <img src="https://images.unsplash.com/photo-1544717305-996b815c338c" alt="Women Leaders">
             <h3>Udaan: Lighting the Path for Women Leaders of Tomorrow</h3>
         </div>
     </section>
