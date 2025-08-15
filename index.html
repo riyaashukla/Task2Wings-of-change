@@ -3,70 +3,148 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wings of Change — Project Udaan | InAmigos Foundation</title>
+  <title>Breaking Chains, Building Leaders — Project Udaan | InAmigos Foundation</title>
   <style>
-    body {font-family: Arial, sans-serif; margin: 0; background-color: #fdfdfd; color: #222; line-height: 1.6;}
-    header {background: url('https://source.unsplash.com/1600x600/?women,empowerment') center/cover no-repeat; padding: 60px 20px; color: white; text-align: center;}
-    header h1 {font-size: 2.5em; margin-bottom: 0.3em;}
-    header p {max-width: 700px; margin: auto; font-size: 1.2em;}
-    main {max-width: 900px; margin: auto; padding: 20px;}
-    h2 {color: #0f766e; margin-top: 1.5em;}
-    .quote {background-color: #e0f7f5; border-left: 5px solid #0f766e; padding: 15px; font-style: italic;}
-    img {width: 100%; border-radius: 8px; margin: 15px 0;}
-    footer {background: #0f766e; color: white; padding: 15px 20px; text-align: center; margin-top: 30px;}
-    .hashtags span {display: inline-block; background: white; color: #0f766e; padding: 6px 12px; margin: 4px; border-radius: 20px; font-size: 0.9em;}
-    .share-section {margin-top: 25px; text-align: center;}
-    .share-section a {display: inline-block; margin: 5px; padding: 10px 16px; background: #0f766e; color: white; border-radius: 6px; text-decoration: none; font-weight: bold;}
+    :root{--accent:#0f766e;--dark:#062b2b;--muted:#55606a}
+    *{box-sizing:border-box}
+    body{font-family: 'Segoe UI', Roboto, Arial, sans-serif; margin:0; background:#fafafa; color:#0b1a1a}
+    .container{max-width:980px;margin:28px auto;padding:20px}
+    .card{background:#fff;border-radius:12px;padding:22px;box-shadow:0 10px 30px rgba(10,15,20,0.06)}
+    header.hero{display:grid;gap:14px;align-items:center;text-align:center}
+    header h1{margin:0;font-size:28px;color:var(--dark)}
+    header p.lead{margin:0;color:var(--muted);font-size:16px}
+
+    .headlines{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:18px}
+    .hbox{background:#f6fffd;border-left:6px solid var(--accent);padding:12px;border-radius:8px}
+    .hbox h3{margin:0;font-size:16px;color:var(--dark)}
+    .hbox p{margin:6px 0 0;color:var(--muted);font-size:14px}
+
+    main.article{margin-top:20px}
+    .meta{display:flex;justify-content:space-between;align-items:center;gap:12px}
+    .tagline{color:var(--muted)}
+    .byline{font-weight:700;color:var(--dark)}
+
+    article h2{color:var(--accent);margin-top:20px}
+    article p{color:#123;line-height:1.7}
+    .quote{background:#eaf7f5;border-left:4px solid var(--accent);padding:12px;border-radius:8px;margin:12px 0;font-style:italic}
+
+    img.hero-img{width:100%;height:360px;object-fit:cover;border-radius:10px;margin-top:16px}
+    img.inline-img{width:100%;height:260px;object-fit:cover;border-radius:8px;margin:14px 0}
+
+    .hashtags{margin-top:14px}
+    .hashtags .tag{display:inline-block;background:#eef6f5;color:var(--accent);padding:8px 12px;border-radius:20px;margin:6px;font-weight:600}
+
+    .share{margin-top:18px;text-align:center}
+    .share a{display:inline-block;margin:6px;padding:10px 14px;border-radius:8px;text-decoration:none;color:white;background:var(--accent);font-weight:700}
+
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:14px}
+
+    @media (max-width:700px){.headlines{grid-template-columns:1fr} header h1{font-size:22px}}
   </style>
 </head>
 <body>
-  <header>
-    <h1>Wings of Change — Empowering Women, Transforming Futures</h1>
-    <p>From silence to strength, from shadows to spotlight — Project Udaan is rewriting the story of women’s empowerment in India.</p>
-  </header>
+  <div class="container">
+    <div class="card">
+      <header class="hero">
+        <div class="meta">
+          <div>
+            <div class="byline">Project Udaan — InAmigos Foundation</div>
+            <div class="tagline">Tag: <strong>@InAmigosFoundation</strong> • Aug 15, 2025</div>
+          </div>
+        </div>
 
-  <main>
-    <h2>Breaking the Chains of Limitation</h2>
-    <p>For too long, countless women have been denied the chance to soar because of invisible chains — poverty, tradition, and lack of opportunity. Project Udaan doesn’t just break these chains; it replaces them with wings. Through awareness drives, family dialogues, and confidence-building sessions, Udaan transforms how communities see women: not as dependents, but as decision-makers.</p>
-    <img src="https://source.unsplash.com/900x500/?women,teamwork" alt="Empowered women working together">
+        <h1>Breaking Chains, Building Leaders</h1>
+        <p class="lead">A focused, solution-driven program that transforms restrictions into resolve — training women to lead businesses, families, and communities.</p>
 
-    <h2>Empowerment Beyond Employment</h2>
-    <p>True empowerment isn’t just a paycheck; it’s the ability to dream, decide, and lead. Udaan offers skill-building programs in tailoring, handicrafts, technology, and business management, paired with financial literacy and leadership training. These are not just lessons — they are keys to independence and self-worth.</p>
+        <img class="hero-img" src="https://source.unsplash.com/1600x900/?women,empowerment,workshop" alt="Women empowerment workshop">
+      </header>
 
-    <div class="quote">“When you empower a woman, you empower a community. When you give her wings, she changes the direction of the wind.”</div>
+      <!-- Five headlines with short definitions -->
+      <section class="headlines" aria-label="Five headlines and definitions">
+        <div class="hbox">
+          <h3>Wings of Change – Empowering Women, Transforming Futures</h3>
+          <p>Focuses on building pathways so women can move from aspiration to achievement through skills and support.</p>
+        </div>
 
-    <h2>Stories That Ignite Hope</h2>
-    <p>Meera was once told her place was in the kitchen. Today, she runs a thriving boutique and mentors other women entrepreneurs. Rukhsana, widowed and struggling, learned digital skills through Udaan and now earns a steady income from a remote job — while teaching others to do the same. These women are living proof that opportunity is the spark; courage is the flame.</p>
-    <img src="https://source.unsplash.com/900x500/?women,leadership" alt="Women leading community initiatives">
+        <div class="hbox">
+          <h3>Breaking Chains, Building Leaders</h3>
+          <p>Highlights removal of social and economic barriers while nurturing leadership and agency among women.</p>
+        </div>
 
-    <h2>A Ripple That Transforms Communities</h2>
-    <p>An empowered woman educates her children, uplifts her family, and inspires her neighbors. Udaan’s work multiplies impact — each success story lights the path for many more. This is not just change; it’s a revolution in progress.</p>
+        <div class="hbox">
+          <h3>Her Voice, Her Power, Our Future</h3>
+          <p>Emphasizes how amplifying women’s voices leads to stronger, more inclusive communities.</p>
+        </div>
 
-    <h2>A Call to Action</h2>
-    <p>The sky is wide, but not every woman has been given her wings. It’s time we change that. Support Project Udaan — mentor, donate, or share these stories. Together, we can ensure every woman not only dreams but also dares to fly.</p>
+        <div class="hbox">
+          <h3>Dream. Dare. Do – The Udaan Spirit</h3>
+          <p>Celebrates courage, practical action, and resilience — the mindset Udaan cultivates in women.</p>
+        </div>
 
-    <div class="hashtags">
-      <span>#InAmigosFoundation</span>
-      <span>#ProjectUdaan</span>
-      <span>#UdaanByInAmigos</span>
-      <span>#InAmigosForChange</span>
-      <span>#WomenWithInAmigos</span>
-      <span>#EmpowerHer</span>
-      <span>#RiseWithUdaan</span>
-      <span>#TransformingLives</span>
+        <div class="hbox" style="grid-column:1 / -1">
+          <h3>From Shadows to Spotlight</h3>
+          <p>Represents women stepping out of invisibility into roles of leadership and recognition.</p>
+        </div>
+      </section>
+
+      <!-- Selected headline expanded into full article (500-600 words) -->
+      <main class="article">
+        <article>
+          <h2>Breaking Chains, Building Leaders</h2>
+
+          <p>Invisible chains — poverty, social bias, restricted mobility, and lack of access to education — have kept millions of women from reaching their potential. Project Udaan by InAmigos Foundation refuses to accept this as fate. Udaan’s mission is direct: dismantle those barriers, and replace them with the skills, confidence, and networks women need to lead.</p>
+
+          <p>Udaan begins where many programs stop — by changing how communities think. Awareness sessions and family-dialogue workshops open conversations that matter: why girls’ education benefits everyone, how women’s income lifts entire households, and why women’s leadership makes local governance stronger. Changing minds is the first, and most essential, step toward changing lives.</p>
+
+          <p>But words without action are hollow. Udaan couples mindset shifts with hands-on training. Its curriculum blends vocational skills (tailoring, food processing, handicrafts), digital literacy (basic computing, online work, freelancing), and entrepreneurship (business planning, microfinance navigation). Simultaneously, women learn financial literacy, public speaking, and community organizing — tools that convert skill into sustainable opportunity.</p>
+
+          <div class="quote">“When a woman finds her voice, an entire community hears a new possibility.”</div>
+
+          <p>Consider Meera: once confined to household chores, she enrolled in Udaan’s tailoring-and-business module. With mentorship and a small seed fund, she launched a boutique that now employs a team of women from her village. Or look at Rukhsana: a widow who learned digital skills and secured remote work; today she supports her family and teaches others to navigate online platforms. These are not isolated successes — they are models that multiply.</p>
+
+          <p>Udaan measures impact through outcomes: number of women trained, enterprises started, digital placements secured, and most importantly, women participating in local decision-making bodies. The approach is scalable — training local trainers, partnering with microfinance institutions, and building mentorship circles so each success seeds many more.</p>
+
+          <p>This ripple effect matters. An empowered woman invests in her children’s education, contributes to household stability, and elevates community standards. Over time, villages that embraced Udaan report better school attendance, small business growth, and more women taking leadership roles in panchayats and cooperatives.</p>
+
+          <p>Yet Udaan’s work is an invitation: it asks civil society, businesses, and individuals to join. Volunteer expertise, contribute seed funding, mentor a micro-entrepreneur, or simply amplify stories of success. Every contribution helps unlock another life.</p>
+
+          <h3 style="margin-top:18px">How You Can Help</h3>
+          <ul>
+            <li>Share this story and tag <strong>@InAmigosFoundation</strong> to amplify impact.</li>
+            <li>Volunteer as a mentor (digital skills, business coaching, or leadership).</li>
+            <li>Support micro-grants for start-ups led by women in our program.</li>
+          </ul>
+
+          <img class="inline-img" src="https://source.unsplash.com/1200x600/?women,training,small-business" alt="Women receiving training">
+
+          <p>Project Udaan is not charity — it is investment. Investing in women yields returns measured in dignity, resilience, and shared prosperity. Help us turn chains into wings — so that every woman has the chance to stand, lead, and transform the future.</p>
+        </article>
+
+        <div class="hashtags" aria-hidden="false">
+          <span class="tag">#InAmigosFoundation</span>
+          <span class="tag">#ProjectUdaan</span>
+          <span class="tag">#UdaanByInAmigos</span>
+          <span class="tag">#InAmigosForChange</span>
+          <span class="tag">#WomenWithInAmigos</span>
+          <span class="tag">#EmpowerHer</span>
+          <span class="tag">#RiseWithUdaan</span>
+          <span class="tag">#TransformingLives</span>
+        </div>
+
+        <div class="share">
+          <p style="margin:0 0 8px;font-weight:700">Share & Publish — amplify this message</p>
+          <a href="https://twitter.com/intent/tweet?text=Breaking+Chains,+Building+Leaders+-+Support+Project+Udaan+by+InAmigos+Foundation&hashtags=InAmigosFoundation,ProjectUdaan,EmpowerHer" target="_blank" rel="noopener">Share on Twitter</a>
+          <a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(window.location.href),'fbshare','width=600,height=400');return false;">Share on Facebook</a>
+          <a href="https://www.linkedin.com/shareArticle?mini=true&url=&title=Breaking+Chains,+Building+Leaders&summary=Support+Project+Udaan+by+InAmigos+Foundation" target="_blank" rel="noopener">Share on LinkedIn</a>
+        </div>
+
+      </main>
+
+      <footer>
+        &copy; 2025 InAmigos Foundation — Together, We Rise.
+      </footer>
     </div>
-
-    <div class="share-section">
-      <p><strong>Share this article & inspire change!</strong></p>
-      <a href="#">Share on Facebook</a>
-      <a href="#">Share on Twitter</a>
-      <a href="#">Share on LinkedIn</a>
-    </div>
-  </main>
-
-  <footer>
-    &copy; 2025 InAmigos Foundation — Together, We Rise.
-  </footer>
+  </div>
 </body>
 </html>
 
